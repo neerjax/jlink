@@ -14,14 +14,14 @@
 
 .header h1 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   color: #333;
   margin: 0;
 }
 
 .brand {
-  color: #3dd6b5;
-  font-weight: 500;
+  color: #28BF85;
+  font-weight: 700;
 }
 
 .hero {
@@ -32,7 +32,7 @@
 .logo {
   font-size: 80px;
   font-weight: 700;
-  margin: 0 0 20px 0;
+  margin: 0;
   letter-spacing: -2px;
 }
 
@@ -41,20 +41,20 @@
 }
 
 .logo-link {
-  color: #3dd6b5;
+  color: #28BF85;
 }
 
 .tagline {
   font-size: 18px;
   color: #666;
-  margin: 0;
+  margin: -8px 0 0 0;
 }
 
 .content {
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 500px 1fr;
   gap: 40px;
   padding: 40px;
 }
@@ -63,6 +63,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-color: white;
+  border: 2px solid #28BF85;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  min-height: 500px;
 }
 
 .form-group {
@@ -80,7 +86,7 @@
 .form-group input,
 .form-group textarea {
   padding: 12px 16px;
-  border: 1px solid #d0d0d0;
+  border: 1px solid #e0e0e0;
   border-radius: 6px;
   font-size: 14px;
   font-family: inherit;
@@ -91,7 +97,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #3dd6b5;
+  border-color: #28BF85;
 }
 
 .form-group input::placeholder,
@@ -107,7 +113,7 @@
 
 .create-button {
   padding: 14px 28px;
-  background-color: #3dd6b5;
+  background-color: #28BF85;
   color: white;
   border: none;
   border-radius: 6px;
@@ -119,7 +125,7 @@
 }
 
 .create-button:hover {
-  background-color: #35c4a4;
+  background-color: #22a06d;
 }
 
 .create-button:active {
@@ -127,11 +133,11 @@
 }
 
 .results-section {
-  border: 2px solid #3dd6b5;
+  border: 2px solid #28BF85;
   border-radius: 12px;
   padding: 30px;
   background-color: white;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .results-header {
@@ -144,6 +150,10 @@
   margin: 0 0 15px 0;
 }
 
+.count-number {
+  color: #28BF85;
+}
+
 .action-buttons {
   display: flex;
   gap: 12px;
@@ -151,21 +161,30 @@
 }
 
 .action-btn {
-  padding: 8px 16px;
-  background-color: #f5f5f5;
-  border: 1px solid #d0d0d0;
+  padding: 10px 20px;
+  background-color: #28BF85;
+  color: white;
+  border: none;
   border-radius: 6px;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: background-color 0.2s;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+}
+
+.action-btn svg {
+  flex-shrink: 0;
 }
 
 .action-btn:hover {
-  background-color: #e8e8e8;
-  border-color: #b0b0b0;
+  background-color: #22a06d;
+}
+
+.action-btn:active {
+  transform: translateY(1px);
 }
 
 .links-list {
@@ -186,7 +205,7 @@
 }
 
 .link-item a {
-  color: #3dd6b5;
+  color: #2c2c2c;
   text-decoration: none;
   font-size: 14px;
   word-break: break-all;
@@ -194,6 +213,54 @@
 
 .link-item a:hover {
   text-decoration: underline;
+}
+
+.empty-state {
+  font-size: 16px;
+  color: #2c2c2c;
+  margin: 0 0 15px 0;
+}
+
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-icon input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.readonly-input {
+  background-color: #f5f5f5 !important;
+  cursor: not-allowed;
+}
+
+.edit-icon-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.edit-icon-btn:hover {
+  color: #28BF85;
+}
+
+.edit-icon-btn:active {
+  transform: scale(0.95);
+}
+
+.edit-icon-btn svg {
+  display: block;
 }
 
 @media (max-width: 1024px) {
