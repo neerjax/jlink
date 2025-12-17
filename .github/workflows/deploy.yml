@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - master
+      - claude/build-frontend-ui-pZebb
   workflow_dispatch:
 
 permissions:
