@@ -146,7 +146,7 @@ function App() {
         <div className="results-section">
           <div className="results-header">
             {jlinks.length > 0 ? (
-              <p>Your <strong className="count-number">{jlinks.length}</strong> JLinks are ready.</p>
+              <p>Your <strong className="count-number">{jlinks.length}</strong> {jlinks.length === 1 ? 'JLink is' : 'JLinks are'} ready.</p>
             ) : (
               <p className="empty-state">No JLinks to show.</p>
             )}
